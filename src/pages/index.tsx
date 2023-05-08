@@ -10,21 +10,25 @@ export default function Home() {
       title: "Statistiques et Infos Générales",
       desc: "Capitale, Chef du Gouvernement, et plus!",
       page: "/general",
+      key: "tab1",
     },
     {
       title: "Galerie de Photos",
       desc: "10 photos du Cameroun",
       page: "/gallery",
+      key: "tab2",
     },
     {
       title: "La Mode du Cameroun",
       desc: "Un Lookbook de 4 tenues populaires du Cameroun",
       page: "/fashion",
+      key: "tab3",
     },
     {
       title: "La Musique du Cameroun",
       desc: "2 artistes du Cameroun, votre mini-biographies et musique!",
       page: "/music",
+      key: "tab4",
     },
   ];
 
@@ -56,8 +60,6 @@ export default function Home() {
     "https://www.newstoriesafrica.com/wp-content/uploads/2023/01/Krys-M-7.jpg.webp",
     "https://www.youtube.com/watch?v=s8v9Utq4nhg",
   ];
-
-  const citations = [""];
 
   return (
     <main
@@ -93,6 +95,7 @@ export default function Home() {
       <div className="mb-32 mt-28 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         {tabs.map((tab) => (
           <Link
+            key={tab.key}
             href={tab.page}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
