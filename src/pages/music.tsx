@@ -54,7 +54,7 @@ export default function Music() {
           </div>
           <div className="sm:w-1/2 w-100 h-full">
             <div className="px-4 py-4 relative bg-gray-900 m-auto">
-              <Tooltip content={"nice"}>
+              <Tooltip content={"Un photo de Libianca"}>
                 <Image
                   className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] m-auto"
                   src="/libianca.jpg"
@@ -84,7 +84,6 @@ export default function Music() {
 
       <div className="flex flex-wrap w-full -m-4 mt-32 ">
         <div className="sm:w-1/3 w-100 p-4 m-auto">
-          <Tooltip content={"nice"}>
             <Image
               className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] m-auto"
               src="/flag.svg"
@@ -93,13 +92,12 @@ export default function Music() {
               height={37}
               priority
             />
-          </Tooltip>
         </div>
 
         <div className="sm:w-2/3 w-100 p-4">
           <div className="flex relative h-full w-full">
             <div className="sm:w-1/2 w-100 px-4 py-4 relative z-10 w-full bg-gray-900 ">
-              <Tooltip content={"nice"}>
+              <Tooltip content={"Un photo de Krys-M"}>
                 <Image
                   className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
                   src="/krys-m.jpg"

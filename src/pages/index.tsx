@@ -110,11 +110,11 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="mb-32 mt-28 text-center text-4xl lg:mb-0 ">
+      <div className="mb-32 mt-28 text-4xl lg:mb-0 ">
         <p>Bibliographie</p>
-        <div className="mb-12 mt-12 text-center text-2xl ">
+        <div className="mb-12 mt-12 text-2xl ">
           <p>Photos:</p>
-          <div className="mb-12 mt-12 text-center text-sm ">
+          <div className="mb-12 mt-12 text-sm ">
             {sources.map((source) => (
               <>
                 <a href={source}> {source}</a>

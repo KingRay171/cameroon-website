@@ -26,29 +26,36 @@ export default function General() {
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Capitale: <span className='text-[#0141ff]'>Yaoundé</span>
                     </h2>
+                    <br></br>
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Chef du gouvernement: <span className='text-[#0141ff]'>Paul Biya</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Date de l’indépendance: <span className='text-[#0141ff]'>January 1, 1960</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Population: <span className='text-[#0141ff]'>27,744,989</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Langues: <span className='text-[#0141ff]'>Français, Anglais</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Devise: <span className='text-[#0141ff]'>CFA franc (XAF)</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     Slogan: <span className='text-[#0141ff]'>Paix, Travail, Patrie</span>
                     </h2>
+                    <br></br>
 
                     <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
                     L’hymne national: <span className='text-[#0141ff]'>Chant de Ralliement</span>
@@ -58,53 +65,52 @@ export default function General() {
                 </div>
               </div>
 
-              <div
-                className="sm:w-1/2 w-100 p-4">
-
-                <div className="flex relative h-full">
+              <div className="sm:w-1/2 w-100 p-4 flex relative h-full">
                   <div className="px-4 py-4 relative z-10 w-full border-4 border-gray-800 bg-gray-900 ">
                     <Tooltip content={"nice"}>
                     <Image
                       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
                       src="/cameroun.gif"
                       alt="Paul Bija"
-                      width={180}
+                      width={280}
                       height={37}
 
                       priority
                     />
                     </Tooltip>
-                    <Tooltip content={"nice"}>
+                    <br></br>
+                    <Tooltip content={"Paul Bija, la chef du gouvernement du Cameroun"}>
                     <Image
-                      className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+                      className="relative h-full dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
                       src="/bija.jpg"
                       alt="Paul Bija"
-                      width={180}
+                      width={280}
                       height={37}
 
                       priority
                     />
                     </Tooltip>
-                    <Tooltip content={"nice"}>
+                    <br></br>
+                    <Tooltip content={"La Devise du Cameroun"}>
                     <Image
                       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
                       src="/money.webp"
                       alt="Paul Bija"
-                      width={180}
+                      width={280}
                       height={37}
 
                       priority
                     />
                     </Tooltip>
-
+                    <br></br>
                     <audio
+                        className='dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
                         controls
                         src="/hymne.mp3">
                             Your browser does not support the
                             <code>audio</code> element.
                     </audio>
                   </div>
-                </div>
               </div>
 
             </div>
