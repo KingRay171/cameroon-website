@@ -4,6 +4,43 @@ import { Tooltip } from '@nextui-org/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function General() {
+
+    const info = [
+      {
+        question: "Capitale: ",
+        answer: "Yaoundé"
+      },
+      {
+        question: "Chef du gouvernement: ",
+        answer: "Paul Biya"
+      },
+      {
+        question: "Date de l’indépendance: ",
+        answer: "January 1, 1960"
+      },
+      {
+        question: "Population: ",
+        answer: "27,744,989"
+      },
+      {
+        question: "Langues: ",
+        answer: "Francais, Anglais"
+      },
+      {
+        question: "Devise:",
+        answer: "CFA franc (XAF)"
+      },
+      {
+        question: "Slogan: ",
+        answer: "Paix, Travail, Patrie"
+      },
+      {
+        question: "L'hymne national: ",
+        answer: "Chant de Ralliement"
+      }
+
+    ];
+
     return (
         <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
             <div className="relative flex place-items-center text-6xl
@@ -17,50 +54,17 @@ export default function General() {
             </div>
 
             <div className="flex flex-wrap w-full -m-4 mt-32 ">
-            <div
-                className="sm:w-1/2 w-100 p-4">
-
+            <div className="sm:w-1/2 w-100 p-4">
                 <div className="flex relative h-full">
                   <div className="px-4 py-4 relative z-10 w-full border-4 border-gray-800 bg-gray-900 ">
-                    <br></br>
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Capitale: <span className='text-[#0141ff]'>Yaoundé</span>
-                    </h2>
-                    <br></br>
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Chef du gouvernement: <span className='text-[#0141ff]'>Paul Biya</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Date de l’indépendance: <span className='text-[#0141ff]'>January 1, 1960</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Population: <span className='text-[#0141ff]'>27,744,989</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Langues: <span className='text-[#0141ff]'>Français, Anglais</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Devise: <span className='text-[#0141ff]'>CFA franc (XAF)</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    Slogan: <span className='text-[#0141ff]'>Paix, Travail, Patrie</span>
-                    </h2>
-                    <br></br>
-
-                    <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
-                    L’hymne national: <span className='text-[#0141ff]'>Chant de Ralliement</span>
-                    </h2>
-
+                    {info.map((e) => (
+                      <>
+                        <h2 className="tracking-widest text-lg title-font font-medium font-mono mb-1 ">
+                        {e.question} <span className='text-[#0141ff]'>{e.answer}</span>
+                        </h2>
+                        <br></br>
+                      </>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -104,7 +108,7 @@ export default function General() {
                     </Tooltip>
                     <br></br>
                     <audio
-                        className='dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
+                        className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
                         controls
                         src="/hymne.mp3">
                             Your browser does not support the
